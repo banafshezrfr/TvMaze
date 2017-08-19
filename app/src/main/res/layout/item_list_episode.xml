@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cv_episode"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dis_5"
+    android:elevation="@dimen/dis_35"
+    app:cardBackgroundColor="@color/color_dark_blue_4"
+    card_view:cardCornerRadius="@dimen/dis_0">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/rp_episode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="@android:integer/config_shortAnimTime"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="@dimen/dis_5"
+        app:mrl_rippleFadeDuration="20"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dis_5"
+            android:paddingRight="@dimen/dis_5">
+
+            <ImageView
+                android:id="@+id/im_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/dis_5" />
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/im_logo"
+                android:layout_below="@+id/im_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dis_10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dis_10"
+                android:textColor="@color/color_white" />
+        </RelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</android.support.v7.widget.CardView>
